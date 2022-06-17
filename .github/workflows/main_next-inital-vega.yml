@@ -24,8 +24,8 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          npm run export
           npm run build
+          npm run export
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
